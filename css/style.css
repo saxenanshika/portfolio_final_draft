@@ -1,0 +1,752 @@
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html, body{
+    font-family:'Inter', sans-serif;
+}
+
+/* main{
+  position: absolute;
+  z-index: -1;
+} */
+
+img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        /* margin-left: 20px; */
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        align-content: center;
+        /* transition: all .5s ease-in-out; */
+        
+}
+img:hover{
+    transform: scale(1.03);
+    color: transparent black ;
+}
+
+.text{
+    text-align: center;
+    text-transform: capitalize;
+}
+.active{
+  border: solid 1px #8d4004;
+  color: #8d4004;
+  padding: 5px;
+}
+
+.navbar{
+  background-color: #ffffff;
+ 
+  
+}
+.navbar-brand{
+  margin-top: 10px;
+}
+
+.navbar .navbar-toggler .icon-bar {
+  margin-top: 10px;
+  background: black !important;
+}
+
+nav ul{
+  
+  /* background:rgba(0, 0, 0, 0.5); */
+  /* padding:10px 20px; */
+  font-size:20px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  text-align: center;
+}
+nav a{
+  color: #000000;
+}
+nav li{
+    display: block;
+    /* padding: 5px; */
+}
+li:hover{
+  border:none;
+  /* padding:20px 20px #000000; */
+  color:#1b1b1b;
+}
+
+nav ul li{
+    margin-top: 10px;
+}
+.skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+}
+.skip:focus{
+   margin-top: 50px;
+    background-color: #000000;
+    position: static;
+    color: white;
+    width: auto;
+    height: auto;
+    
+}
+h1{
+    padding-top: 2vh;
+    text-align: center;
+}
+footer {
+    background: rgb(6, 44, 80); 
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+
+.form-box {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 50px;
+  background: #f7f7f7;
+  border: 10px solid #f2f2f2;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+.intro{
+    background: url("../images/background_img.png") #dddddd ;
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+}
+.wrapper{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+p{
+    text-align: left;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+.card-container{
+    position: relative;
+    
+}
+.text-block{
+    position: absolute;
+    bottom: 5px;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    height: 7vh;
+    width: 150px;
+    
+}
+.text-block p{
+    font-size: 14px;
+    text-align: center;
+    
+}
+.story {
+    /* background-color: dodgerblue; */
+    color: white;
+    padding: 1rem;
+    height: 30vh;
+    
+  }
+.story-wrapper{
+    max-width: 800px;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    row-gap: 1rem;   
+}
+.flip-card {
+    background-color: transparent;
+    /* width: 300px;
+    height: 300px; */
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #F8C8DC;
+    padding-top: 20px;
+    color:black;
+    transform: rotateY(180deg);
+  }
+  
+
+
+/*WAVE CODE --- DANGEROUS*/
+
+.waves {
+  height:40px;
+  width: 100%;
+  }
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+
+  /*LOADER - VERY PROUD*/
+
+  #cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #141526;
+    z-index: 9999;
+    font-size: 30px;
+    text-align: center;
+    padding: 10vh;
+    color: #fff;
+  }
+
+
+  .story-one img{
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+  }
+
+  .story-three img{
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+  }
+
+ .text-block-story {
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 50%;
+    height: 40%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    background-color:#ffffff;
+    /* border: 2px solid #000000; */
+    outline: 1px solid rgb(6, 44, 80);
+    outline-offset: -8px;
+    color: rgb(6, 44, 80);
+  }
+
+  .text-block-story h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .text-block-story p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+
+
+/* Tablet view */
+@media only screen and (min-width: 768px) {
+
+  .waves {
+    height: 80px;
+    width: 100%;
+    }
+
+  /* h1{
+    padding-top: 10vh;
+  } */
+
+    nav{
+        height: 8vh;
+    }
+
+    
+    .navbar-brand{
+      margin-top: 10px;
+    }
+  
+  .intro{
+    background: url("../images/background_img.png") #dddddd ;
+    height: 35vh;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    }
+   
+
+    .wrapper{
+    padding: .5vw;
+    font-size: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-flex-flow: row wrap; 
+    flex-flow: row wrap; 
+    display: flex;
+    }
+   .card-container{
+    flex: auto; 
+    width: 200px; 
+    position: relative;
+   }
+   .card-container img{
+    height: 300px;
+    width: 100%; 
+    /* height: auto;  */
+   }
+   .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(224, 123, 0, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .card-container:hover .overlay {
+    height: 100%;
+  }
+
+  .text {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .story{
+      height: 20vh;
+  }
+
+  .story-wrapper{
+    max-width: 700px;
+  }
+
+  #cover{
+    padding:20vh;
+  }
+
+
+  .text-block-story h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: teal;
+  }
+
+  .text-block-story p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* Open collapsible */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion {
+  width: 600px;
+  /* Horizontally and vertically centering the accordion */
+  position: relative;
+  margin-top: 20vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordion__collapsible {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  
+}
+
+.accordion__collapsible:not(:last-child) {
+  border-bottom: none;
+}
+
+.collapsible__header {
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.collapsible__header::after {
+  content: '+';
+  /* position: fixed; */
+  right: 10px;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1s, opacity 1s;
+}
+
+.collapsible--open .collapsible__header::after {
+  content: '-';
+}
+
+.collapsible--open .collapsible__content {
+  max-height: 200px;
+  opacity: 1;
+}
+
+
+
+/* Content styles - To make inner content look better */
+.collapsible__header p {
+  font-size: medium;
+}
+
+.collapsible__content p {
+  font-size: small;
+  margin: 10px;
+  padding: 10px;
+}
+
+#cover{
+  padding: 40vh;
+  font-size: 50px;
+
+}
+
+}
+
+/* Desktop view */
+@media only screen and (min-width: 900px){
+
+
+  /* h1{
+    padding-top: 15vh;
+  } */
+
+    nav{
+        height: 12vh; 
+    }
+
+    .nav li{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .navbar-brand{
+      margin-top: 20px;
+    }
+
+    .intro{
+        height: 90vh;
+    }
+
+   /*Story page stylying only*/
+   .story {
+    color: white;
+    padding: 1rem;
+    height: 60vh;
+  }
+  
+ 
+
+  .text-block-story h4,p {
+    padding: 15px;
+  }
+
+
+  .story-wrapper {
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .my-form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+  }
+
+  .story-four{
+      grid-column: 1/-1;
+      color: black;
+      background-color: white;
+      border:black;
+      border-style:solid;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    /* width: 300px;
+    height: 300px; */
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #F8C8DC;
+    padding-top: 20px;
+    color:black;
+    transform: rotateY(180deg);
+  }
+   /*---xx Story page styling ends ---xx*/
+   .text-block-story h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .text-block-story p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+/*WAVE CODE -- DANGEROUS*/
+
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:20vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Open collapsible */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion {
+  width: 600px;
+  /* Horizontally and vertically centering the accordion */
+  position: relative;
+  margin-top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordion__collapsible {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  
+}
+
+.accordion__collapsible:not(:last-child) {
+  border-bottom: none;
+}
+
+.collapsible__header {
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.collapsible__header::after {
+  content: '+';
+  /* position: fixed; */
+  right: 10px;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1s, opacity 1s;
+}
+
+.collapsible--open .collapsible__header::after {
+  content: '-';
+}
+
+.collapsible--open .collapsible__content {
+  max-height: 200px;
+  opacity: 1;
+}
+
+
+
+/* Content styles - To make inner content look better */
+.collapsible__header p {
+  font-size: medium;
+}
+
+.collapsible__content p {
+  font-size: small;
+  margin: 10px;
+  padding: 10px;
+}
+
+#cover{
+  padding: 40vh;
+  font-size: 50px;
+
+}
+
+
+
+
+}
