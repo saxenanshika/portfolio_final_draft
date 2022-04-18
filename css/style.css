@@ -230,9 +230,8 @@ p{
   }
   
   .flip-card-back {
-    background-color: #F8C8DC;
-    padding-top: 20px;
-    color:black;
+    background-color: rgb(6, 44, 80);
+    color:white;
     transform: rotateY(180deg);
   }
   
@@ -494,7 +493,7 @@ p{
 
   .text {
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
@@ -720,9 +719,9 @@ html, body {
   }
   
   .flip-card-back {
-    background-color: #F8C8DC;
+    background-color: rgb(6, 44, 80);
+    color:white;;
     padding-top: 20px;
-    color:black;
     transform: rotateY(180deg);
   }
    /*---xx Story page styling ends ---xx*/
@@ -855,4 +854,5 @@ html, body {
 
 
 }
+
 
